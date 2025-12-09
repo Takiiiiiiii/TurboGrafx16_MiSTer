@@ -177,7 +177,7 @@ module emu
 );
 
 
-//`define DEBUG_BUILD
+`define DEBUG_BUILD
 //`define DEBUG_PALETTES
 
 `ifdef DEBUG_BUILD
