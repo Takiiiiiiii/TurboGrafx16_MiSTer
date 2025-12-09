@@ -348,7 +348,8 @@ wire reset = (RESET | status[0] | buttons[1] | bk_loading);
 wire ce_rom;
 
 reg use_sdr = 0;
-always @(posedge clk_ram) if(~rom_rd) use_sdr <= LITE ? ~status[6] : |sdram_sz[14:0];
+//always @(posedge clk_ram) if(~rom_rd) use_sdr <= LITE ? ~status[6] : |sdram_sz[14:0];
+always @(posedge clk_ram) use_sdr <= LITE ? ~status[6] : |sdram_sz[14:0];
 
 wire overscan = ~status[17];
 
