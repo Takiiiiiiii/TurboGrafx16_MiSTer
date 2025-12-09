@@ -1,4 +1,4 @@
-name: Compile GBA Core
+name: Compile Core
 
 on:
   workflow_dispatch:
