@@ -23,7 +23,7 @@ module  pll_0002(
 		.operation_mode("direct"),
 		.number_of_clocks(2),
 		.output_clock_frequency0("85.909090 MHz"),
-		.phase_shift0("260 deg"),
+		.phase_shift0("8407 ps"), // 260 degrees converted to ps
 		.duty_cycle0(50),
 		.output_clock_frequency1("42.954545 MHz"),
 		.phase_shift1("0 ps"),
